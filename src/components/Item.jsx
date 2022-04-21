@@ -1,5 +1,7 @@
 import React from "react";
+import ItemDetail from "./ItemDetail";
 import {CardGroup, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
+import { Link } from "react-router-dom";
 
 export default function Item ({id, nombre, descripcion, precio, img, category}) {
     
@@ -12,7 +14,7 @@ export default function Item ({id, nombre, descripcion, precio, img, category}) 
                     src={img}
                     top
                     width="100%"
-                    />
+                    />  <Button>  <Link to={`/item/${id}`}>Detalles</Link> </Button>
                     <CardBody>
                     <CardTitle tag="h5">
                         {nombre}
@@ -28,6 +30,7 @@ export default function Item ({id, nombre, descripcion, precio, img, category}) 
                     <CardText>
                         {category}
                     </CardText>
+                   
                     </CardBody>
                 </Card>
             </CardGroup>

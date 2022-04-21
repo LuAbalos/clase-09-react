@@ -11,9 +11,7 @@ const ItemListContainer= () => {
 
   const [dato, setDato] = useState ([]);
   const { idCategory } = useParams ();
-  
-  console.log(idCategory);
-  console.log("esto va a hacer tus productos", products);
+
   useEffect(() =>{
     if (idCategory == undefined){
       customFetch(2000, products)
@@ -27,7 +25,7 @@ const ItemListContainer= () => {
     }
     
   }, [idCategory])
-  console.log("esto es un estado", dato)
+  
   function onAdd (qty) {
     alert(`se agregó ${qty} productos`)
   }

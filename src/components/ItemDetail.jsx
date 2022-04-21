@@ -1,11 +1,15 @@
 import ItemCount from "./ItemCount";
-import React from "react";
+import React, { useState, } from "react";
 import {CardGroup, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText} from 'reactstrap';
+import { Link } from "react-router-dom";
+import { Button } from "bootstrap";
+import Events from "./Events";
 
 const ItemDetail = ({ item }) => {
-
+    const [itemCount, setItemCount] = useState(0)
     const onAdd = (qty) => {
-        alert("You have selected" + qty + "items.")
+        alert("You have selected" + qty + "items.");
+        setItemCount(qty);
     }
 
     return (
@@ -32,10 +36,15 @@ const ItemDetail = ({ item }) => {
                         <CardText>
                             {item.stock} unidades en stock
                         </CardText>
-                        <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
                     </CardBody>
+                    
                 </Card>
             </CardGroup>
+            {
+             itemCount === 0
+                ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                :  <Button>  <Link to='./Events'>Detalles</Link> </Button>
+            }
         </div>
         }
         </>

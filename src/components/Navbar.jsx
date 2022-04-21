@@ -8,7 +8,7 @@ const NavBar = () => {
             <ul className="navegador">    
             
                 <li>
-                   <Link to='/' className='links'> <h2> MARINO VARETA </h2></Link>
+                   <Link to='/' > <h2> MARINO VARETA </h2></Link>
                     
                 </li>
 
