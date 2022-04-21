@@ -11,7 +11,9 @@ const ItemListContainer= () => {
 
   const [dato, setDato] = useState ([]);
   const { idCategory } = useParams ();
-    
+  
+  console.log(idCategory);
+  console.log("esto va a hacer tus productos", products);
   useEffect(() =>{
     if (idCategory == undefined){
       customFetch(2000, products)
@@ -23,11 +25,11 @@ const ItemListContainer= () => {
         .then((result) => setDato(result))
         .catch((err) => console.log(err)); 
     }
-    console.log(idCategory);   
+    
   }, [idCategory])
-
-  function onAdd (c) {
-    alert(`se agregó ${c} productos`)
+  console.log("esto es un estado", dato)
+  function onAdd (qty) {
+    alert(`se agregó ${qty} productos`)
   }
 
   return (
@@ -39,11 +41,3 @@ const ItemListContainer= () => {
   
 export default ItemListContainer;
 
-//<ItemCount stock ={5} initial={1} onAdd= {onAdd} />
-
-//const [productosDeHigiene, setproductosDeHigiene] = useState ([]);
-//   async function pedirDatos() {
-//   let datosLlegando = await getData()
-//   setproductosDeHigiene(datosLlegando)
-// }
-// pedirDatos()

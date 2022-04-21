@@ -7,10 +7,9 @@ export const products = [
     precio: "$100",
     img: "img/pads.jpg",
     categoryId: 16 ,
-    category:{
-      name: "Productos suaves",
-      id: 16
-    }
+    category: "Productos suaves",
+
+  
   },
 
   {
@@ -21,10 +20,8 @@ export const products = [
     precio: "$550",
     img : "img/esponja.jpg",
     categoryId: 16 ,
-    category:{
-      name: "Productos suaves",
-      id: 16
-    }
+    category: "Productos suaves",
+     
   },
 
   {
@@ -35,10 +32,7 @@ export const products = [
     precio: "$340", 
     img: "img/bolsaJabonera.jpg", 
     categoryId: 16 ,
-    category:{
-      name: "Productos suaves",
-      id: 16
-    }
+    category: "Productos suaves",
   },
 
   {
@@ -49,10 +43,7 @@ export const products = [
     precio: "$150",
     img: "img/padsExfoliantes.jpg",
     categoryId: 17,
-    category:{
-      name: "Exfoliantes",
-      id: 17
-    }
+    category: "Exfoliantes",
   },
 
   {
@@ -63,10 +54,8 @@ export const products = [
     precio: "$350",
     img: "img/bolsaJaboneraExfoliante.jpg",
     categoryId: 17,
-    category:{
-      name: "Exfoliantes",
-      id: 17
-    }
+    category:
+      "Exfoliantes",
   },
 
   {
@@ -77,10 +66,7 @@ export const products = [
     precio: "$400",
     img: "img/combo.jpg",
     categoryId: 18,
-    category:{
-      name: "Combo",
-      id: 18
-    }
+    category:"Combo"
   },
 
 ];

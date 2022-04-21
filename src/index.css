@@ -76,6 +76,42 @@ li:hover {
     color: white;
 }
 
+.links 
+  p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    line-height: 1.4;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: #420153;
+  }
+  
+  a:visited {
+    color: #7a165c;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: #e498dc;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    background: #feaaf1;
+  }
+  
+  a:active {
+    background: #530142;
+    color: #feaaea;
+  }
+
 .imagen {
   display: inline;
   justify-content: space-around;

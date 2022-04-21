@@ -1,7 +1,7 @@
 import React from "react";
 import {CardGroup, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
 
-export default function Item ({id, nombre, descripcion, precio, img  }) {
+export default function Item ({id, nombre, descripcion, precio, img, category}) {
     
     return (
         <div>
@@ -24,6 +24,9 @@ export default function Item ({id, nombre, descripcion, precio, img  }) {
                     </CardSubtitle>
                     <CardText>
                         {precio}
+                    </CardText>
+                    <CardText>
+                        {category}
                     </CardText>
                     </CardBody>
                 </Card>
